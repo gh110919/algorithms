@@ -34,14 +34,14 @@ function dfs(graph: Map<number, number[]>, start: number): number[] {
 
 /* Тестовый случай 1: Простой граф с одним узлом */
 const graph1 = new Map<number, number[]>([[1, []]]);
-console.log(dfs(graph1, 1)); // Результат: [1]
+console.log(dfs(graph1, 1)); /* Результат: [1] */
 
 /* Тестовый случай 2: Граф с одним ребром */
 const graph2 = new Map<number, number[]>([
   [1, [2]],
   [2, []],
 ]);
-console.log(dfs(graph2, 1)); // Результат: [1, 2]
+console.log(dfs(graph2, 1)); /* Результат: [1, 2] */
 
 /* Тестовый случай 3: Граф с несколькими ребрами */
 const graph3 = new Map<number, number[]>([
@@ -50,7 +50,7 @@ const graph3 = new Map<number, number[]>([
   [3, [4]],
   [4, []],
 ]);
-console.log(dfs(graph3, 1)); // Результат: [1, 3, 4, 2]
+console.log(dfs(graph3, 1)); /* Результат: [1, 3, 4, 2] */
 
 /* Тестовый случай 4: Граф с циклом */
 const graph4 = new Map<number, number[]>([
@@ -58,7 +58,7 @@ const graph4 = new Map<number, number[]>([
   [2, [3]],
   [3, [1]],
 ]);
-console.log(dfs(graph4, 1)); // Результат: [1, 2, 3]
+console.log(dfs(graph4, 1)); /* Результат: [1, 2, 3] */
 
 /* Тестовый случай 5: Несвязанный граф */
 const graph5 = new Map<number, number[]>([
@@ -67,6 +67,6 @@ const graph5 = new Map<number, number[]>([
   [3, [4]],
   [4, []],
 ]);
-console.log(dfs(graph5, 1)); // Результат: [1, 2]
-console.log(dfs(graph5, 3)); // Результат: [3, 4]
+console.log(dfs(graph5, 1)); /* Результат: [1, 2] */
+console.log(dfs(graph5, 3)); /* Результат: [3, 4] */
 ```
